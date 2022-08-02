@@ -26,5 +26,5 @@ consistency（一致性）：Put(key,value) ; Get(key) ——>value.  在单机�
 
 ## Map reduce
 
-
+![image-20211019220212043](C:\Users\lizi2\AppData\Roaming\Typora\typora-user-images\image-20211019220212043.png)
 
