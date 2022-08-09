@@ -100,3 +100,9 @@ $ go run -race mrworker.go wc.so
 ![image-20220718223125295](C:\Users\lizi2\AppData\Roaming\Typora\typora-user-images\image-20220718223125295.png)
 
 ![image-20220718223145657](C:\Users\lizi2\AppData\Roaming\Typora\typora-user-images\image-20220718223145657.png)
+
+```go
+//整个项目的架构
+
+```
+
