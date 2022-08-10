@@ -4,7 +4,7 @@
 
 ## OSDI' 04中MapReduce模型运行的主要流程
 
-https://github.com/lzz19980125/MIT_6.824/blob/main/picture%20bed/mr1.PNG
+![](https://github.com/lzz19980125/MIT_6.824/blob/main/picture%20bed/mr1.PNG)
 
 ## 项目的组织架构
 
