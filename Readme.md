@@ -1,29 +1,36 @@
-# MapReduce的架构与原理
+# MIT 6.824 Lab 1: Re-implement MapReduce model described in OSDI' 04
 
-## lab_1文件的组织架构
+本项目为MIT 6.824 (distribute system) 课程中的Lab 1, 旨在根据发表在OSDI '04上MapReduce的原始论文重构一个简易的MapReduce模型, 并用于`Word Count`任务(对文本进行词频统计). 该模型具有一定的容错(Fault Tolerance)机制, 当多个Worker突然崩溃(Crash)或无响应时, Master仍能够进行正确的调度, 使得模型最终产出正确的结果. 整个项目基于Golang进行实现. 
 
-- `main`：主文件夹
+## OSDI' 04中MapReduce模型运行的主要流程
 
-  - `mrcoordinator.go`：coordinator 的启动文件（coordinator是英文协调员的意思）
 
-  - `mrworker.go`：worker的启动文件
 
-  - `mrsequential.go`：实验串行模拟版本（a simple sequential mapreduce implementation）
+## 项目的组织架构
 
-    > 注：以上文件需要在不同的终端启动
-
-  - `test-mr.sh`：测试实验是否通过的`shell`脚本
-
-- `mr`：worker 和 coordinator 具体实现的文件夹
-
-  - `coordinator.go`
-  - `worker.go`
-  - `rpc.go`：worker 和 coordinator 通信的实现
-
-- `mrapps`：每对Map-Reduce操作的具体实现文件夹
-
-  - `wc.go` : Map-Reduce的具体应用程序: word count
-  - `indexer.go` ：Map-Reduce的具体应用程序: text indexer
+* `6.824`:项目的主文件夹
+  * `src`
+    * `main`
+      * `mrcoordinator.go`: `coordinator `的启动函数
+      * `mrworker.go`: `worker`的启动函数
+      * `mrsequential.go`: `MapReduce`的串行实现
+      * `pg-*.txt` : `Word Count Task`需要处理的文本
+      * `test-mr.sh ` : `MIT 6.824`官方提供的测试脚本
+    * `mr`
+      * `coordinator.go` : `Master`的主要实现
+      * `worker.go `: `Worker`的主要实现
+      * `rpc.go` : `rpc`通信的实现
+    * `mrapps` 
+      * `wc.go ` :`Word Count test`
+      * `indexer.go` : `Indexer test`
+      * `mtiming.go` : `Map parallelism test`
+      * `rtiming.go`: `Reduce parallelism test`
+      * `early_exit.go`: `early exit test`
+      * `jobcount.go`: `job count test`
+      * `crash.go` :`crash test`
+* `lecture notes`: 个人有关`MIT 6.824`课程的笔记
+* `related paper`: `MapReduce`相关论文
+* `picture bed` : 图床
 
 ## lab_1 Mapreduce的串行(sequential)版本运行与调试步骤
 
