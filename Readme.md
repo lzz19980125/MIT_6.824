@@ -6,6 +6,18 @@
 
 ![](https://github.com/lzz19980125/MIT_6.824/blob/main/picture%20bed/mr1.PNG)
 
+## OSDI' 04中MapReduce模型中的Fault Tolerance机制
+
+![](https://github.com/lzz19980125/MIT_6.824/blob/main/picture%20bed/mr2.PNG)
+
+## MIT 6.824 Lab 1中Rules以及Hints中需要注意的地方
+
+![](https://github.com/lzz19980125/MIT_6.824/blob/main/picture%20bed/mr3.PNG)
+
+## MIT 6.824 Lab1 中各个test的主要逻辑
+
+![](https://github.com/lzz19980125/MIT_6.824/blob/main/picture%20bed/mr4.PNG)
+
 ## 项目的组织架构
 
 * `6.824`:项目的主文件夹
