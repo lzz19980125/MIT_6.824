@@ -44,7 +44,11 @@
 * `related paper`: `MapReduce`相关论文
 * `picture bed` : 图床
 
-## lab_1 Mapreduce的串行(sequential)版本运行与调试步骤
+## 项目流程图
+
+
+
+## MIT 6.824 Lab1中mrsequential的运行步骤以及GoLand的Debug设置
 
 整个串行版本的运行命令如下：
 
@@ -61,13 +65,13 @@ ACT 8
 ...
 ```
 
-在goland中的debug configure如下：
+在goland中的debug设置如下：
 
 ![](https://github.com/lzz19980125/MIT_6.824/blob/main/picture%20bed/goland1.png)
 
-## Lab_1 MapReduce你需要完成的地方
+## Lab_1 MapReduce学习者需要完成的地方
 
-你需要改动的所有代码都在 `mr/coordinator.go`, `mr/worker.go`, and `mr/rpc.go`中，项目具体的启动过程如下：
+需要改动的所有代码都在 `mr/coordinator.go`, `mr/worker.go`, and `mr/rpc.go`中，项目具体的启动过程如下：
 
 ```bash
 $ go build -race -buildmode=plugin ../mrapps/wc.go    #编译mapreduce的应用程序word count作为动态链接库
@@ -87,9 +91,4 @@ $ go run -race mrworker.go wc.so
 ![](https://github.com/lzz19980125/MIT_6.824/blob/main/picture%20bed/goland2.png)
 
 ![](https://github.com/lzz19980125/MIT_6.824/blob/main/picture%20bed/goland3.png)
-
-```go
-//整个项目的架构
-
-```
 
