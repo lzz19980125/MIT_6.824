@@ -63,7 +63,7 @@ ACT 8
 
 在goland中的debug configure如下：
 
-![image-20220713204837422](C:\Users\lizi2\AppData\Roaming\Typora\typora-user-images\image-20220713204837422.png)
+![](https://github.com/lzz19980125/MIT_6.824/blob/main/picture%20bed/goland1.png)
 
 ## Lab_1 MapReduce你需要完成的地方
 
@@ -84,9 +84,9 @@ $ go run -race mrworker.go wc.so
 
 ### 有关`mrcoordinator.go`以及`mrworker.go`的Debug窗口配置如下:
 
-![image-20220718223125295](C:\Users\lizi2\AppData\Roaming\Typora\typora-user-images\image-20220718223125295.png)
+![](https://github.com/lzz19980125/MIT_6.824/blob/main/picture%20bed/goland2.png)
 
-![image-20220718223145657](C:\Users\lizi2\AppData\Roaming\Typora\typora-user-images\image-20220718223145657.png)
+![](https://github.com/lzz19980125/MIT_6.824/blob/main/picture%20bed/goland3.png)
 
 ```go
 //整个项目的架构
