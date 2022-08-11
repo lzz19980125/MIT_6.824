@@ -46,6 +46,8 @@
 
 ## 项目流程图
 
+![](https://github.com/lzz19980125/MIT_6.824/blob/main/picture%20bed/project_chart.PNG)
+
 
 
 ## MIT 6.824 Lab1中mrsequential的运行步骤以及GoLand的Debug设置
